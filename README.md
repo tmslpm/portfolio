@@ -1,6 +1,6 @@
-# https://tmslpm.github.io/portfolio/#/
+# [tmslpm.github.io/portfolio](https://tmslpm.github.io/portfolio/#/)
 
-personal portfolio
+personal portfolio, text  text  text  text  text  text  text 
 
 
 ## 🚦 Getting Started
@@ -43,7 +43,7 @@ Build project to dist
 $ npm run vbuild
 ```
 
-Build project *and deploy on localhost server*
+Build project **and deploy on localhost server**
 ```
 $ npm run vstart
 ```
