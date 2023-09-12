@@ -1,10 +1,13 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: DEPLOY_STATIC_CONTENT
+run-name: ${{ github.actor }} - Deploy static content to Pages
 
+# Runs after other action, action: {name: NPM_BUILD}
 on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+  workflow_run:
+    workflows: ["NPM_BUILD"]
+    types:
+      - completed
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:

@@ -8,7 +8,7 @@ import MyFooter from '@/components/MyFooter.vue';
 <template>
     <TopNavigation />
     <main class="col-12">
-        <h1>Welcome 442</h1> 
+        <h1>Welcome 2</h1> 
     </main> 
     <MyFooter />
 </template>
