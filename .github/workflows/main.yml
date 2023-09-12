@@ -1,22 +1,47 @@
+# task/action name/descrption
 name: npm build and update main repos
 run-name: ${{ github.actor }} - npm build and update main repos
-on: [push]
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
+      # setup nodeJS
       - uses: actions/setup-node@v3
         with:
           node-version: "18.7.0"
           cache: "npm"
 
+      # prepare projet npm
       - name: Install dependencies
         run: npm install
 
+      # execute custom npm task (for build the source in dist)
       - name: Run Task
         run: npm run vbuild
  
+      # github prepare file
       - name: Commit files
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
@@ -24,15 +49,16 @@ jobs:
           git add .
           git commit -m "update dist after build (github-actions)"
 
+      # github push to main branch (update the dist folder after the build task)
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
 
+      # setup github-page for host static HTML
       - name: Setup Pages
         uses: actions/configure-pages@v3
-        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with: 
