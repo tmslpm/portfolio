@@ -8,32 +8,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-
-      # setup nodeJS
+      - uses: actions/checkout@v3 
       - uses: actions/setup-node@v3
         with:
           node-version: "18.7.0"
-          cache: "npm"
-
-      # prepare projet npm
-      - name: Install dependencies
-        run: npm install
-
-      # execute custom npm task (for build the source in dist)
-      - name: Run Task
-        run: npm run vbuild
- 
-      # github prepare file
-      - name: Commit files
+          cache: "npm" 
+      - name: Install NPM dependencies
+        run: npm install 
+      - name: Run NPM task (like build)
+        run: npm run vbuild 
+      - name: Make Github commit
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add .
-          git commit -m "update dist after build (github-actions)"
-
-      # github push to main branch (update the dist folder after the build task)
-      - name: Push changes
+          git commit -m "update dist after build (github-actions)" 
+      - name: Make Github push
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
