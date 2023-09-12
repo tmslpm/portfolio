@@ -2,6 +2,15 @@
 
 personal portfolio, text  text  text  text  text  text  text 
 
+<div style="text-align:center" align="center">
+<table width="100%">
+    <tr>
+        <td><img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/888px-Vue.js_Logo_2.svg.png" alt="vuejs"/></td>  
+        <td><img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png" alt="vuejs"/></td>  
+        <td><img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png" alt="vuejs"/></td>  
+    </tr>
+</table>
+</div>
 
 ## 🚦 Getting Started
 
