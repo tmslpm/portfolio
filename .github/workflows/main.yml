@@ -2,12 +2,7 @@
 name: npm build and update main repos
 run-name: ${{ github.actor }} - npm build and update main repos
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+on: [push]
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
