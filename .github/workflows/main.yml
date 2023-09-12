@@ -1,0 +1,31 @@
+name: npm build and update main repos
+run-name: ${{ github.actor }} - npm build and update main repos
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18.7.0"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Task
+        run: npm run vbuild
+ 
+      - name: Commit files
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          git commit -m "update dist after build (github-actions)"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
