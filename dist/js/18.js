@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkportofolio_tmslpm"]=self["webpackChunkportofolio_tmslpm"]||[]).push([[18],{18:function(e,n,o){o.r(n),o.d(n,{default:function(){return i}});var t=o(252);const r=e=>((0,t.dD)("data-v-94d0e3ee"),e=e(),(0,t.Cn)(),e),a={class:"col-12"},s=r((()=>(0,t._)("h1",null,"NotFound",-1))),u=[s];function c(e,n){return(0,t.wg)(),(0,t.iD)("main",a,u)}var l=o(744);const d={},f=(0,l.Z)(d,[["render",c],["__scopeId","data-v-94d0e3ee"]]);var i=f}}]);
+//# sourceMappingURL=18.js.map
