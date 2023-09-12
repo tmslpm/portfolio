@@ -1,4 +1,10 @@
-# [tmslpm.github.io/portfolio](https://tmslpm.github.io/portfolio/#/)
+<div style="text-align:center" align="center">
+
+# Visit the portofolio: [tmslpm.github.io/portfolio](https://tmslpm.github.io/portfolio/#/)
+
+</div>
+
+## Welcome !
 
 personal portfolio, text  text  text  text  text  text  text 
 
@@ -7,17 +13,17 @@ personal portfolio, text  text  text  text  text  text  text
     <tr>
         <td>
             <a href="https://vuejs.org/" title="Open url: vuejs.org">
-                <img width="128" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/888px-Vue.js_Logo_2.svg.png" alt="Logo VueJS, src: wikimedia.org"/>
+                <img width="120" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/888px-Vue.js_Logo_2.svg.png" alt="Logo VueJS, src: wikimedia.org"/>
             </a>
         </td>  
         <td>
             <a href="https://www.typescriptlang.org/" title="Open url: typescriptlang.org">
-                <img width="128" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png" alt="Logo TypeScript, src: wikimedia.org"/>
+                <img width="120" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png" alt="Logo TypeScript, src: wikimedia.org"/>
             </a>
         </td> 
         <td>
             <a href="https://sass-lang.com/" title="Open url: sass-lang.com">
-                <img width="128" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png" alt="Logo SCSS/SASS, src: wikimedia.org"/>
+                <img width="120" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png" alt="Logo SCSS/SASS, src: wikimedia.org"/>
             </a>
         </td> 
     </tr>
@@ -27,7 +33,7 @@ personal portfolio, text  text  text  text  text  text  text
 ## 🚦 Getting Started
 
 This project require: 
-- NodeJS >=v18.7.0.
+- [NodeJS](https://nodejs.org/fr) >=v18.7.0.
 - A computer ? 
 
 This project uses NPM for dependencies and project management ([*Getting Started*](https://docs.npmjs.com/getting-started))
