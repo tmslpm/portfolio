@@ -1,7 +1,7 @@
 {
-  "name": "portofolio.tmslpm",
+  "name": "portfolio.tmslpm",
   "version": "1.0.0",
-  "description": "My Portofolio",
+  "description": "My Portfolio",
   "main": "index.js",
   "scripts": {
     "/* Vue */": "=====================================================",
@@ -16,7 +16,7 @@
     "test": "jest"
   },
   "keywords": [
-    "Portofolio",
+    "Portfolio",
     "HTML5",
     "SCSS",
     "VueTS",
