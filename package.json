@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "/* Vue */": "=====================================================",
-    "vbuild": "vue-cli-service build --watch",
+    "vbuild": "vue-cli-service build",
+    "vbuildWatch": "vue-cli-service build --watch",
     "vstart": "vue-cli-service build && vue-cli-service serve",
     "vserve": "vue-cli-service serve",
     "___________________[Jest]": "____________________________________________",
