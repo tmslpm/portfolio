@@ -1,4 +1,5 @@
 const { defineConfig } = require("@vue/cli-service");
+const path = require('path');
 
 console.log(`Preset file path ${__filename}`);
 
@@ -10,7 +11,9 @@ module.exports = defineConfig({
   /* add alias folder */
   configureWebpack: {
     resolve: {
-      alias: {}
+      alias: {
+        '@json': path.resolve(__dirname, 'json/'),
+      }
     },
 
     plugins: [
